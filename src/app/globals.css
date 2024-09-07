@@ -2,26 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*{
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    margin-top: 48px;
+    touch-action: pan-y;
+}
+.custom-dot-list {
+background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  position: absolute;
+  bottom: -10px;
+  
+}
+/* bottom nav bar */
+@media (max-width: 768px) {
+    .bottomNavBarWrapper {
+      display: block; /* Show the bottom navigation bar on mobile */
+    }
+  
+    .bottomNavBarWrapper > .MuiBottomNavigation-root {
+      display: block; /* Show the bottom navigation bar on mobile */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .bottomNavBarWrapper {
+      display: none; /* Hide the bottom navigation bar on desktop */
+    }
+  
+    .bottomNavBarWrapper > .MuiBottomNavigation-root {
+      display: none; /* Hide the bottom navigation bar on desktop */
+    }
+  }
+
+ 
+.about_card{
+    background-color:#f8c8bd65;
+}
+.margin_home{
+    margin-top: 57px;
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.about_card{
+  /* background-color:#ffffff13; */
+  background-color: #b5f7c553;
+  height: 200px;
+  width: 400px;
+  box-shadow: none;
+  border-radius: 5px;
+  margin-top:20px;
+  margin-bottom:40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+  /* Add any additional CSS styling as needed */
+@media only screen and (min-width:321px) and (max-width:768px){
+
+
+
+
+
+.about_card{
+/* background-color:#feffe2; */
+background-color: #b5f7c553;
+height: 170px;
+width: 200px;
+box-shadow: none;
+border-radius: 5px;
+margin-top:20px;
+margin-bottom:40px;
+margin-left: 10px;
+margin-right: 10px;
+}
+.about_text{
+font-size: 10px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+}
+
+
+@media (max-width:540px){
+.marginBottomForMob{
+    margin-bottom: 50px !important;
+}
+}
+
+
