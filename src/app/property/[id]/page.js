@@ -1,4 +1,5 @@
 "use client";
+import BottomNavBar from "@/components/BottomNavigation/BottomNavBar";
 import PriceCard from "@/components/PriceCard/PriceCard";
 import { useParams, useSearchParams } from "next/navigation";
 import { FaMapMarkerAlt } from "react-icons/fa";
@@ -48,6 +49,7 @@ const PropertyDetails = () => {
           <PriceCard price={price} />
         </div>
       </div>
+      <BottomNavBar />
     </>
   );
 };
