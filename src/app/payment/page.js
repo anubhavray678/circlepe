@@ -8,7 +8,7 @@ import BrandingWatermarkIcon from "@mui/icons-material/BrandingWatermark";
 export default function Payment() {
   const router = useRouter();
   return (
-    <div class="bg-gray-100 flex justify-center items-center min-h-screen pt-20 pb-20">
+    <div class="bg-gray-100 flex justify-center items-center min-h-screen pt-5 pb-20">
       <div class="bg-white shadow-lg rounded-2xl w-full max-w-md p-6">
         <div class="text-center">
           <h1 class="text-2xl font-bold mb-2">
