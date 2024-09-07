@@ -78,9 +78,11 @@ export default function Conform() {
         </div>
 
         {/* Continue Button */}
-        <button className="bg-blue-500 text-white py-2 px-8 rounded mt-6">
-          Continue &gt;
-        </button>
+        <div className="flex justify-center">
+          <button className="bg-blue-500 text-white py-2 px-8 rounded mt-6 w-full ">
+            Continue &gt;
+          </button>
+        </div>
       </div>
     </div>
   );
