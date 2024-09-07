@@ -28,7 +28,7 @@ function BottomNavBar() {
   useEffect(() => {
     const userAgent = window.navigator.userAgent;
     setIsMobile(
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|window|IEMobile|Opera Mini/i.test(
         userAgent
       )
     );
