@@ -63,7 +63,7 @@ const PayButton = () => {
               </p>
             </div>
           </div>
-          <Link href={"/"}>
+          <Link href={"/payment"}>
             <button className="bg-blue-400 text-white p-3 rounded-xl capitalize mt-10 font-bold">
               Pay With Circle
             </button>
