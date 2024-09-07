@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="w-full flex justify-between">
         {/* Left Circle */}
         <div
-          className="flex items-center w-14 h-14 bg-sky-100 rounded-full justify-center"
+          className="flex items-center w-14 h-14 bg-sky-100 rounded-full justify-center cursor-pointer"
           onClick={() => router.back()}
         >
           <FaChevronLeft className="text-[#21435b] w-6 h-6" />
@@ -25,7 +25,7 @@ const Navbar = () => {
         </div>
 
         {/* Right Icon */}
-        <div className="flex items-center w-14 h-14 bg-sky-100 rounded-full justify-center">
+        <div className="flex items-center w-14 h-14 bg-sky-100 rounded-full justify-center cursor-pointer">
           <FaFilter className="text-[#21435b] w-6 h-6" />
         </div>
       </div>

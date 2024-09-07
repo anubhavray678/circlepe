@@ -13,6 +13,7 @@ const Property = () => {
       ratings: 4,
       address: "123 Main St, Anytown, USA",
       price: "1200",
+      isHoveredInitially: false,
     },
     {
       id: 2,
@@ -22,15 +23,17 @@ const Property = () => {
       ratings: 5,
       address: "456 Elm St, Othertown, USA",
       price: "1500",
+      isHoveredInitially: true,
     },
     {
       id: 3,
       image:
-        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGNvdHRhZ2V8ZW58MHx8fHwxNjM2Mjc2NjYw&ixlib=rb-1.2.1&q=80&w=400",
+        "https://plus.unsplash.com/premium_photo-1689609950112-d66095626efb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2V8ZW58MHx8MHx8fDA%3D",
       name: "Cozy Cottage",
       ratings: 3,
       address: "789 Oak St, Sometown, USA",
       price: "900",
+      isHoveredInitially: false,
     },
     {
       id: 4,
@@ -40,6 +43,7 @@ const Property = () => {
       ratings: 5,
       address: "101 Pine St, Anycity, USA",
       price: "2000",
+      isHoveredInitially: false,
     },
   ];
 
@@ -54,6 +58,7 @@ const Property = () => {
           ratings={property.ratings}
           address={property.address}
           price={property.price}
+          isHoveredInitially={property.isHoveredInitially}
         />
       ))}
     </div>
