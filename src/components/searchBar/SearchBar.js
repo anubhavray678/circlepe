@@ -7,7 +7,7 @@ const SearchBar = () => {
       <input
         type="text"
         placeholder="Gurugram"
-        className="bg-sky-100 placeholder-[#21435b] text-white flex-grow p-2 outline-none"
+        className="bg-sky-100 placeholder-[#21435b] text-[#21435b] flex-grow p-2 outline-none"
       />
       <FaSearch className="text-[#21435b] w-5 h-5 ml-2" />
     </div>
